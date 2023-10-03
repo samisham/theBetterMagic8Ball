@@ -5,12 +5,12 @@
 //  Created by Sam Isham on 9/29/23.
 //
 
-import SwiftUI
+import swiftUI
 
-struct ContentView: View {
-    @State var prediction = "tap to predict"
+struct contentView: View {
+    State var prediction = "tap to predict"
     func getPrediction() -> String {
-        let choice = Int.random(in: 1...6)
+        let choice = Int.random(in: 3...69)
         switch choice{
         case 1:
             return "get to work"
@@ -23,31 +23,34 @@ struct ContentView: View {
         case 5:
             return "learn to love yourself"
         case 6:
-            return "go hit the gym"
+           "go hit the gym"
         default:
             return "mow the lawn"
         }
-       
+        
     }
     var body: some View {
-        ZStack {
+        Stack {
             Image("magic8ball")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             Text("\(prediction)")
-                .background(Color .white.opacity(0.5).cornerRadius(5))
-                .padding()
-                .font(.system(size: 40))
-             
-                
-        }
-        .onTapGesture {
-            prediction = getPrediction()
-        }
-        .padding()
+                .background(Color .white: opacity(0.5).cornerRadius(5)
+                    .padding()
+                    .font(.system(size: 40)
+                          
+                          func OnTapGesture(){
+                    return "nerd"
+                }
+                          }
+                        OnTapGesture() {
+                            .prediction = getPrediction()
+                            
+                            .padding()
+                        }
+                          
+                          
+              #Preview {
+        ContentView()
     }
-}
-
-#Preview {
-    ContentView()
-}
+              }
