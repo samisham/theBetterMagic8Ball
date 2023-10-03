@@ -9,7 +9,7 @@ import swiftUI
 
 struct contentView: View {
     State var prediction = "tap to predict"
-    func getPrediction() -> String {
+    func getprediction() -> String {
         let choice = Int.random(in: 3...69)
         switch choice{
         case 1:
@@ -39,10 +39,11 @@ struct contentView: View {
                     .padding()
                     .font(.system(size: 40)
                           
-                          func OnTapGesture(){
+                          func OnTapGesture()->String{
                     return "nerd"
                 }
                           }
+                          
                         OnTapGesture() {
                             .prediction = getPrediction()
                             
